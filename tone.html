@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Declares document type as HTML5 -->
+<html lang="en">
+  <!-- Sets the language of the document to English -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design settings -->
+    <title>TRUESKIN</title>
+    <!-- Webpage title -->
+    <link rel="stylesheet" href="CSS/external.css" />
+    <!-- External stylesheet link -->
+    <style>
+      /* Header styling */
+      h1 {
+        margin-top: 4%;
+        font-family: Amore; /* Custom font */
+        font-size: 60px;
+        color: #343333;
+        letter-spacing: 5px;
+      }
+
+      /* Grid container for product layout */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        padding: 20px;
+        margin: 10% 20%;
+      }
+
+      /* Image styles within container */
+      .container img {
+        width: 100%;
+        height: auto;
+        border: solid 8px #755f5a;
+      }
+
+      /* Product title styles */
+      .item h2 {
+        font-size: 20px;
+        font-family: Amore;
+        letter-spacing: 2px;
+      }
+
+      /* Product price styles */
+      .item p {
+        font-size: 18px;
+        color: #e74c3c;
+        font-weight: bold;
+        font-family: Amore;
+        margin: 0;
+        letter-spacing: 2px;
+      }
+
+      /* Navbar interaction disabled */
+      #navbar {
+        pointer-events: none; /* Prevent user interaction */
+      }
+
+      /* Define custom font */
+      @font-face {
+        font-family: Amore;
+        src: url(Fonts/Amore/Amorefont.ttf); /* Font file location */
+      }
+
+      /* Button styling */
+      button {
+        background-color: #f4bfc0;
+        border: solid 2px #755f5a;
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Amore;
+        letter-spacing: 2px;
+      }
+
+      /* Button hover effect */
+      button:hover {
+        background-color: #ff7e80;
+        color: #343333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TRUESKIN</h1>
+      <!-- Website logo or title -->
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <div>
+          <a href="index.html">Home</a>
+          <!-- Link to homepage -->
+          <div class="dropdown">
+            <!-- Body care dropdown -->
+            <a href="bodycare.html">Body Care &#9662;</a>
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="bodywash.html">Body Wash/Scrubs</a>
+              <a href="moisture.html">Moisturizers/Body Butters</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <!-- Skin care dropdown -->
+            <a href="skincare.html">Skin Care &#9662;</a>
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="clean.html">Facial Cleansers & Scrubs</a>
+              <a href="tone.html">Moisturizers & Toners</a>
+            </div>
+          </div>
+          <a href="checkout.html">Checkout</a>
+          <!-- Link to checkout page -->
+        </div>
+      </nav>
+    </header>
+    <!--main content for webpage-->
+    <main>
+      <section class="container">
+        <!-- Product listing section -->
+        <div class="item">
+          <!-- Individual product item -->
+          <img
+            src="Images/tone2.webp"
+            alt="Picture of a Toner. Image taken from Pixlr"
+            title="Picture of a Toner. Image taken from Pixlr" />
+          <h2>Glow Haven Set</h2>
+          <p>$49.99</p>
+          <button onclick="location.href='checkout.html'">
+            🛒 Add To Cart
+          </button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/tone1.webp"
+            alt="Picture of a Toner. Image taken from Pixlr"
+            title="Picture of a Toner. Image taken from Pixlr" />
+          <h2>Skin Symphony Duo</h2>
+          <p>$29.99</p>
+          <button onclick="location.href='checkout.html'">
+            🛒 Add To Cart
+          </button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/moist.png"
+            alt="Picture of a Toner. Image taken from Pixlr"
+            title="Picture of a Toner. Image taken from Pixlr" />
+          <h2>Lather Love Pack</h2>
+          <p>$24.99</p>
+          <button onclick="location.href='checkout.html'">
+            🛒 Add To Cart
+          </button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/moist2.png"
+            alt="Picture of a Toner. Image taken from Pixlr"
+            title="Picture of a Toner. Image taken from Pixlr" />
+          <h2>Shine & Polish Set</h2>
+          <p>$29.99</p>
+          <button onclick="location.href='checkout.html'">
+            🛒 Add To Cart
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with contact details -->
+    <footer>
+      Contact Us:
+      <a href="tel:4315534829" style="color: #f4bfc0">431-553-4829</a> |
+      Instagram:
+      <a
+        href="https://www.instagram.com/accounts/emailsignup/"
+        style="color: #f4bfc0"
+        >@TrueSkin</a
+      >
+      | TikTok:
+      <a href="https://www.tiktok.com/signup" style="color: #f4bfc0"
+        >@Trueskiii</a
+      ><br />
+      &copy; 2025 TRUESKIN. All rights reserved.
+    </footer>
+  </body>
+</html>

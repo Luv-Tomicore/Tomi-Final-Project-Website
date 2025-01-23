@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      /* Styling for the heading */
+      h1 {
+        margin-left: 5%;
+        margin-top: 4%;
+        font-family: Amore;
+        font-size: 60px;
+        color: #343333;
+        letter-spacing: 5px;
+      }
+      /* Container grid layout for product items */
+      .container {
+        display: -moz-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-template-rows: auto; /* Adjust row height automatically */
+        gap: 100px; /* Space between grid items */
+        padding: 20px;
+        margin-left: 20%;
+        margin-top: 10%;
+        margin-right: 20%;
+      }
+      /* Styling for product images */
+      .container img {
+        width: 100%; /* Make images fill their container */
+        height: auto; /* Maintain aspect ratio */
+        border: solid 8px #755f5a;
+      }
+      /* Disable pointer events for inactive navbar links */
+      #navbar2 {
+        pointer-events: none;
+      }
+      /* Styling for product title */
+      .item h2 {
+        font-size: 20px;
+        font-family: Amore;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      /* Styling for product price */
+      .item p {
+        font-size: 18px;
+        color: #e74c3c; /* Red color for the price */
+        font-weight: bold;
+        font-family: Amore;
+        margin: 0;
+        letter-spacing: 2px;
+      }
+      /* Disable pointer events for inactive navbar links */
+      #navbar {
+        pointer-events: none;
+      }
+      /* Custom font */
+      @font-face {
+        font-family: Amore;
+        src: url(Fonts/Amore/Amorefont.ttf);
+      }
+      /* Styling for the Add to Cart button */
+      button {
+        background-color: #f4bfc0;
+        border: solid 2px #755f5a;
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Amore;
+        letter-spacing: 2px;
+      }
+      /* Hover effect for the button */
+      button:hover {
+        background-color: #ff7e80;
+        color: #343333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header>
+      <h1>TRUESKIN</h1>
+      <nav class="navbar">
+        <div>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <!-- body care dropdown -->
+            <a id="navbar2" href="#">Body Care &#9662;</a>
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="bodywash.html">Body Wash/Scrubs</a>
+              <a href="moisture.html">Moisturizers/Body Butters</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <!-- body care dropdown -->
+            <a id="navbar2" href="#">Skin Care &#9662;</a>
+
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="clean.html">Facial cleansers & Scrubs</a>
+              <a href="tone.html">Moisturizers & Toners</a>
+            </div>
+          </div>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+    <!--main content for webpage-->
+    <main>
+      <section class="container">
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/bo2.png"
+            alt="Picture of body butter set.Image taken from Pixlr"
+            title="Picture of body butter set.Image taken from Pixlr" />
+          <h2>Love & Lush Duo</h2>
+          <p>$19.99</p>
+          <button onclick="location.href='Checkout.html'">🛒Add To Cart</button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/bo4.png"
+            alt="Picture of body butter set.Image taken from Pixlr"
+            title="Picture of body butter set.Image taken from Pixlr" />
+          <h2>Shea Radience Set</h2>
+          <p>$29.99</p>
+          <button onclick="location.href='Checkout.html'">🛒Add To Cart</button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/bo1.png"
+            alt="Picture of body butter set.Image taken from Pixlr"
+            title="Picture of body butter set.Image taken from Pixlr" />
+          <h2>Butter Me Series</h2>
+          <p>$24.99</p>
+          <button onclick="location.href='Checkout.html'">🛒Add To Cart</button>
+        </div>
+        <!-- Individual product item -->
+        <div class="item">
+          <img
+            src="Images/bo3.png"
+            alt="Picture of body butter set.Image taken from Pixlr"
+            title="Picture of body butter set.Image taken from Pixlr" />
+          <h2>Nourish & Indulge Collection</h2>
+          <p>$59.99</p>
+          <button onclick="location.href='Checkout.html'">🛒Add To Cart</button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with contact details -->
+    <footer>
+      Contact Us:
+      <a href="tel:4315534829" style="color: #f4bfc0">431-553-4829</a> |
+      Instagram:
+      <a
+        href="https://www.instagram.com/accounts/emailsignup/"
+        style="color: #f4bfc0"
+        >@TrueSkin</a
+      >
+      | TikTok:
+      <a href="https://www.tiktok.com/signup" style="color: #f4bfc0"
+        >@Trueskiii</a
+      ><br />
+      &copy; 2025 TRUESKIN. All rights reserved.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Responsive design for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/external.css" />
+
+    <style>
+      /* Heading styles for the main title */
+      h1 {
+        margin-top: 4%; 
+        font-family: Amore; 
+        font-size: 60px; 
+        color: #343333; 
+        letter-spacing: 5px; 
+      }
+
+      /* Heading styles for subheadings */
+      h2 {
+        margin-left: -5%; 
+        margin-top: 8%; 
+        font-family: Amore; 
+        font-size: 30px; 
+        color: #343333; 
+        letter-spacing: 5px; 
+      }
+
+      /* Paragraph styling */
+      p {
+        margin-left: -10%; 
+        font-family: Amore;
+        text-align: center; 
+        font-size: 16px;
+        font-weight: bold; 
+        color: #343333;
+        letter-spacing: 2px; 
+      }
+
+      /* Image styling */
+      img {
+        margin-left: 10%; 
+        margin-top: 5%; 
+        margin-bottom: 10%; 
+        border: double 10px #755f5a; 
+        width: 300px;
+        height: 300px; 
+      }
+
+      /* Box styles for layout */
+      #box1 {
+        width: 40%; /* Width of the first box */
+      }
+      #box2 {
+        width: 60%; /* Width of the second box */
+      }
+
+      /* Flexbox container for layout arrangement */
+      .container {
+        display: flex; 
+        flex-direction: row; 
+      }
+
+      /* Disable pointer events for navbar links */
+      #navbar2 {
+        pointer-events: none; 
+      }
+
+      /* Footer styles for spacing and layout */
+      footer {
+        padding: 10px;
+        margin-top: -45px; 
+      }
+
+      /* Custom font import for Amore */
+      @font-face {
+        font-family: Amore; 
+        src: url(Fonts/Amore/Amorefont.ttf); /* Font file path */
+      }
+
+      /* Additional footer margin adjustment */
+      footer {
+        margin-top: 10%; /* Space from main content */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section for branding and navigation -->
+    <header>
+      <h1>TRUESKIN</h1>
+      <nav class="navbar">
+        <div>
+          <!-- Home link -->
+          <a href="index.html">Home</a>
+
+          <!-- Dropdown menu for Body Care -->
+          <div class="dropdown">
+            <a id="navbar2" href="#">Body Care &#9662;</a>
+            <div class="dropdown-content">
+              <a href="bodywash.html">Body Wash/Scrubs</a>
+              <a href="moisture.html">Moisturizers/Body Butters</a>
+            </div>
+          </div>
+
+          <!-- Dropdown menu for Skin Care -->
+          <div class="dropdown">
+            <a id="navbar2" href="#">Skin Care &#9662;</a>
+            <div class="dropdown-content">
+              <a href="clean.html">Facial Cleansers & Scrubs</a>
+              <a href="tone.html">Moisturizers & Toners</a>
+            </div>
+          </div>
+
+          <!-- Checkout page link -->
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <section>
+      <div class="container">
+        <!-- Image section -->
+        <div id="box1">
+          <img
+            src="Images/aboutimg.webp"
+            alt="Image was taken from Pixlr. Picture of skincare items."
+            title="Image was taken from Pixlr. Picture of skincare items" />
+        </div>
+        <!-- About Us section -->
+        <div id="box2">
+          <h2>About Us</h2>
+          <p>
+            At TRUESKIN, we believe that true beauty starts with embracing and
+            loving your natural skin. <br />
+            Founded by Tinuola Odugbesan, a 21-year-old currently living in
+            Switzerland, our brand was created with the heartfelt mission of
+            encouraging people of all skin tones to feel comfortable, confident,
+            and free from insecurities.
+            <br />
+            Our slogan,
+            <span style="color: #ba4e50">“Embrace the True You,” </span>
+            reflects our passion for helping you nourish and care for your skin
+            while celebrating and exploring your unique beauty.
+          </p>
+        </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+  <!-- Footer section with contact details -->
+  <footer>
+    Contact Us:
+    <a href="tel:4315534829" style="color: #f4bfc0">431-553-4829</a> |
+    Instagram:
+    <a
+      href="https://www.instagram.com/accounts/emailsignup/"
+      style="color: #f4bfc0"
+      >@TrueSkin</a
+    >
+    | TikTok:
+    <a href="https://www.tiktok.com/signup" style="color: #f4bfc0"
+      >@Trueskiii</a
+    >
+    <br />
+    &copy; 2025 TRUESKIN. All rights reserved.
+  </footer>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      /* Styling for the main title */
+      h1 {
+        margin-left: 5%;
+        margin-top: 4%;
+        font-family: Amore;
+        font-size: 60px;
+        color: #343333;
+        letter-spacing: 5px;
+      }
+
+      /* Box width styling */
+      #box1 {
+        width: 50%;
+      }
+      #box2 {
+        width: 50%;
+      }
+
+      /* Flex container styling for layout */
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* Font embedding */
+      @font-face {
+        font-family: Amore;
+        src: url(Fonts/Amore/Amorefont.ttf);
+      }
+
+      /* Disable pointer events for navbar links */
+      #navbar2 {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header>
+      <h1>TRUESKIN</h1>
+      <nav class="navbar">
+        <div>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a id="navbar2" href="#">Body Care &#9662;</a>
+            <div class="dropdown-content">
+              <a href="bodywash.html">Body Wash/Scrubs</a>
+              <a href="moisture.html">Moisturizers/Body Butters</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a id="navbar2" href="#">Skin Care &#9662;</a>
+            <div class="dropdown-content">
+              <a href="clean.html">Facial cleansers & Scrubs</a>
+              <a href="tone.html">Moisturizers & Toners</a>
+            </div>
+          </div>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

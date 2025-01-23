@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      /* Styling for the main heading */
+      h1 {
+        margin-left: 5%;
+        margin-top: 4%;
+        font-family: Amore;
+        font-size: 60px;
+        color: #343333;
+        letter-spacing: 5px;
+      }
+
+      /* Styling for the image boxes */
+      #box1,
+      #box2 {
+        width: 50%;
+      }
+
+      /* Flex container to align images side by side */
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* Disable pointer events for specific navigation links */
+      #navbar2 {
+        pointer-events: none;
+      }
+
+      /* Footer styling */
+      footer {
+        padding: 10px;
+        margin-top: -45px;
+      }
+
+      /* Import custom font */
+      @font-face {
+        font-family: Amore;
+        src: url(Fonts/Amore/Amorefont.ttf);
+      }
+
+      /* Button animation */
+      @keyframes button {
+        0% {
+          scale: none;
+        }
+        25% {
+          scale: 1.2;
+        }
+        50% {
+          scale: none;
+        }
+      }
+
+      /* Button styling */
+      button {
+        animation-name: button;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        background-color: #f4bfc0;
+        border: solid 5px #755f5a;
+        border-radius: 10px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        top: 90%;
+        left: 50%;
+        padding: 20px 40px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Amore;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header>
+      <h1>TRUESKIN</h1>
+      <nav class="navbar">
+        <div>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <!-- Skin care dropdown -->
+            <a id="navbar2" href="#">Body Care &#9662;</a>
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="bodywash.html">Body Wash/Scrubs</a>
+              <a href="moisture.html">Moisturizers/Body Butters</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <!-- Skin care dropdown -->
+            <a id="navbar2" href="#">Skin Care &#9662;</a>
+            <div class="dropdown-content">
+              <!-- Dropdown options -->
+              <a href="clean.html">Facial cleansers & Scrubs</a>
+              <a href="tone.html">Moisturizers & Toners</a>
+            </div>
+          </div>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+    <!--main content for webpage-->
+    <main>
+      <section>
+        <div class="container">
+          <div id="box1">
+            <img
+              src="Images/gen2.png"
+              width="100%"
+              height="90%"
+              alt="Skincare product image" />
+          </div>
+          <div id="box2">
+            <img
+              src="Images/skinimage.png"
+              width="100%"
+              height="90%"
+              alt="Skincare product image" />
+          </div>
+        </div>
+      </section>
+      <button type="button" onclick="location.href='about.html'">
+        About Us
+      </button>
+    </main>
+    <!-- Footer section with contact details -->
+    <footer>
+      Contact Us:
+      <a href="tel:4315534829" style="color: #f4bfc0">431-553-4829</a> |
+      Instagram:
+      <a
+        href="https://www.instagram.com/accounts/emailsignup/"
+        style="color: #f4bfc0"
+        >@TrueSkin</a
+      >
+      | TikTok:
+      <a href="https://www.tiktok.com/signup" style="color: #f4bfc0"
+        >@Trueskiii</a
+      ><br />
+      &copy; 2025 TRUESKIN. All rights reserved.
+    </footer>
+  </body>
+</html>

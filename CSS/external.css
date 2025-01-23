@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif; /* Sets the default font for the page */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f4bfc0; /* Sets background color to soft pink */
+}
+
+footer {
+  background-color: #755f5a; /* Sets footer background to brown */
+  color: white; /* Sets text color to white */
+  padding: 10px; /* Adds space inside footer */
+  text-align: center; /* Centers footer text */
+  font-size: 16px; /* Sets footer text size */
+  margin-top: 5%; /* Adds space above footer */
+}
+
+.navbar {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  background-color: #755f5a; /* Navbar background color */
+  padding: 20px 20px; /* Adds padding around navbar */
+}
+
+.navbar a {
+  color: white; /* Sets link text color to white */
+  text-decoration: none; /* Removes underline from links */
+  padding: 10px 15px; /* Adds padding around links */
+  font-family: amore; /* Applies custom font */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  font-weight: bold; /* Makes text bold */
+  font-size: 16px; /* Sets link font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+@font-face {
+  font-family: Amore; /*  custom font */
+  src: url(Fonts/Amore/Amorefont.ttf); /* Font file location */
+}
+
+.navbar a:hover {
+  background-color: #f5d0c9; /* Changes background on hover */
+  color: #343333; /* Changes text color on hover */
+}
+
+.dropdown {
+  position: relative; /* Positions dropdown relative to parent */
+  display: inline-block; /* Keeps dropdown inline */
+}
+
+.dropdown-content {
+  display: none; /* Hides dropdown content by default */
+  position: absolute; /* Positions content absolutely */
+  background-color: #f5d0c9; /* Sets dropdown background color */
+  min-width: 160px; /* Sets minimum width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  z-index: 1; /* Ensures dropdown appears above other elements */
+}
+
+.dropdown-content a {
+  color: #343333; /* Sets dropdown link text color */
+  padding: 10px 15px; /* Adds padding inside dropdown items */
+  text-decoration: none; /* Removes underline */
+  display: block; /* Makes links block elements */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.dropdown-content a:hover {
+  background-color: #755f5a; /* Changes background on hover */
+  color: white; /* Changes text color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Displays dropdown content on hover */
+}
